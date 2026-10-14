@@ -12,7 +12,7 @@ class Task2{
             System.out.println("How many terms of the Fibonacci Sequence do you want?");
             if (scan.hasNextInt()) {
                 userInput = scan.nextInt();
-                if (userInput > 0) {
+                if (userInput >= 2) {
                     System.out.print(0 + " " + 1 + " ");
 
 
@@ -28,7 +28,8 @@ class Task2{
                     doWhile = true;
                     scan.nextLine();
                 }
-            }
+            }else{
+                System.output.println("Input 2 or more digits.");
         }while(!doWhile);
     }
 }

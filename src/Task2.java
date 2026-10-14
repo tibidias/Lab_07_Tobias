@@ -1,4 +1,34 @@
-package PACKAGE_NAME;
+import java.util.Scanner;
 
-public class task2 {
+
+class Task2{
+    static void main() {
+        Scanner scan = new Scanner(System.in);
+        int userInput = 0;
+        int a = 0;
+        int b = 1;
+        boolean doWhile = false;
+        do {
+            System.out.println("How many terms of the Fibonacci Sequence do you want?");
+            if (scan.hasNextInt()) {
+                userInput = scan.nextInt();
+                if (userInput > 0) {
+                    System.out.print(0 + " " + 1 + " ");
+
+
+                    for (int i = 2; i < userInput; i++) {
+                        int c = b;
+                        b = a + b;
+                        a = c;
+                        System.out.print(b);
+                        System.out.print(" ");
+
+
+                    }
+                    doWhile = true;
+                    scan.nextLine();
+                }
+            }
+        }while(!doWhile);
+    }
 }

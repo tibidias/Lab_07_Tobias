@@ -29,7 +29,8 @@ class Task2{
                     scan.nextLine();
                 }
             }else{
-                System.output.println("Input 2 or more digits.");
+                System.output.println(0);
+                doWhile = true;
         }while(!doWhile);
     }
 }

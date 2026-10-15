@@ -28,7 +28,7 @@ class Task2{
                     doWhile = true;
                     scan.nextLine();
                 }
-            }else{
+            }else if (userInput == 1){
                 System.output.println(0);
                 doWhile = true;
         }while(!doWhile);
